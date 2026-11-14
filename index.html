@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro Chacolla · Ingeniería de Sistemas</title>
+<meta name="description" content="Portafolio de Pedro Abad Chacolla Espinoza, egresado de Ingeniería de Sistemas: APIs con Java, Python y TypeScript, soporte e infraestructura de redes.">
+<style>
+  :root { --fondo: #f6f7fb; --tarjeta: #fff; --texto: #1b2130; --suave: #5d6576; --borde: #e1e5ee; --acento: #2f5bd3; --acento-2: #0ca678; }
+  @media (prefers-color-scheme: dark) { :root { --fondo: #10131a; --tarjeta: #181c26; --texto: #e8ebf2; --suave: #9aa3b5; --borde: #2b3140; --acento: #7096ff; --acento-2: #3fd4a0; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.6 system-ui, 'Segoe UI', Roboto, sans-serif; background: var(--fondo); color: var(--texto); }
+  a { color: var(--acento); }
+  .contenedor { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 64px 0 36px; }
+  header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 0 0 6px; line-height: 1.2; }
+  header .rol { font-size: 1.15rem; color: var(--suave); margin: 0 0 18px; }
+  .botones { display: flex; flex-wrap: wrap; gap: 10px; }
+  .boton { display: inline-block; padding: 9px 16px; border-radius: 10px; text-decoration: none; font-weight: 600; border: 1px solid var(--borde); background: var(--tarjeta); color: var(--texto); }
+  .boton.principal { background: var(--acento); border-color: var(--acento); color: #fff; }
+  section { padding: 28px 0; }
+  h2 { font-size: 1.35rem; margin: 0 0 16px; }
+  .sobre { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+  .datos { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 16px; font-size: .95rem; }
+  .datos p { margin: 4px 0; }
+  .proyectos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .proyecto { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 8px; }
+  .proyecto h3 { margin: 0; font-size: 1.1rem; }
+  .proyecto p { margin: 0; color: var(--suave); font-size: .95rem; }
+  .proyecto ul { margin: 0; padding-left: 18px; font-size: .92rem; }
+  .etiquetas { display: flex; flex-wrap: wrap; gap: 6px; }
+  .etiqueta { font-size: .78rem; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: color-mix(in srgb, var(--acento) 12%, transparent); color: var(--acento); }
+  .proyecto .enlaces { margin-top: auto; display: flex; gap: 12px; font-weight: 600; font-size: .95rem; }
+  .habilidades { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .habilidades div { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 14px; }
+  .habilidades h3 { margin: 0 0 6px; font-size: .95rem; color: var(--acento-2); }
+  .habilidades p { margin: 0; font-size: .92rem; }
+  footer { padding: 36px 0 56px; color: var(--suave); font-size: .9rem; }
+  @media (max-width: 700px) { .sobre { grid-template-columns: 1fr; } header { padding-top: 40px; } }
+</style>
+</head>
+<body>
+<div class="contenedor">
+  <header>
+    <h1>Pedro Abad Chacolla Espinoza</h1>
+    <p class="rol">Egresado de Ingeniería de Sistemas · Desarrollo backend, APIs e infraestructura de redes</p>
+    <div class="botones">
+      <a class="boton principal" href="#proyectos">Ver proyectos</a>
+      <a class="boton" href="mailto:chacolla43@gmail.com">Contactar</a>
+      <a class="boton" href="https://github.com/chacolla2001-art" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <section class="sobre">
+    <div>
+      <h2>Sobre mí</h2>
+      <p>Soy egresado de Ingeniería de Sistemas de la Universidad Privada del Valle (Univalle) en La Paz, Bolivia. Me interesa construir sistemas confiables: APIs que manejan datos sensibles como dinero o inventario, herramientas para equipos de soporte y monitoreo de infraestructura.</p>
+      <p>Tengo formación en redes (CCNA 1 y 2) e inglés nivel C1. Busco una <b>pasantía o un primer puesto junior</b> en desarrollo de software, soporte de TI o infraestructura, presencial en La Paz o remoto.</p>
+    </div>
+    <div class="datos">
+      <p>📍 La Paz, Bolivia</p>
+      <p>🎓 Ingeniería de Sistemas, Univalle (egresado)</p>
+      <p>🌐 Cisco CCNA 1 y 2</p>
+      <p>🗣️ Español nativo · Inglés C1</p>
+      <p>✉️ <a href="mailto:chacolla43@gmail.com">chacolla43@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos">
+      <article class="proyecto">
+        <h3>💳 Billetera API</h3>
+        <p>API de una billetera digital con transferencias atómicas entre cuentas.</p>
+        <ul>
+          <li>Dinero en centavos enteros: sin errores de redondeo.</li>
+          <li>Idempotencia: un reintento no cobra dos veces.</li>
+          <li>Bloqueo de filas en orden fijo para evitar interbloqueos; límite diario.</li>
+        </ul>
+        <div class="etiquetas"><span class="etiqueta">Python</span><span class="etiqueta">FastAPI</span><span class="etiqueta">SQLAlchemy</span><span class="etiqueta">pytest</span><span class="etiqueta">Docker</span></div>
+        <div class="enlaces"><a href="https://github.com/chacolla2001-art/billetera-api" target="_blank" rel="noopener">Código ↗</a></div>
+      </article>
+      <article class="proyecto">
+        <h3>📦 Inventario</h3>
+        <p>API de inventario para empresas: entradas, salidas, ajustes por conteo físico y kardex.</p>
+        <ul>
+          <li>Alertas de stock mínimo y valorización del inventario.</li>
+          <li>Bloqueo optimista para cambios simultáneos y errores estándar (RFC 9457).</li>
+          <li>Pruebas unitarias y de integración con MockMvc.</li>
+        </ul>
+        <div class="etiquetas"><span class="etiqueta">Java 21</span><span class="etiqueta">Spring Boot</span><span class="etiqueta">JPA</span><span class="etiqueta">JUnit</span><span class="etiqueta">Maven</span></div>
+        <div class="enlaces"><a href="https://github.com/chacolla2001-art/inventario-spring" target="_blank" rel="noopener">Código ↗</a></div>
+      </article>
+      <article class="proyecto">
+        <h3>🛟 Mesa de ayuda</h3>
+        <p>Sistema de tickets de soporte con SLA por prioridad, roles y métricas.</p>
+        <ul>
+          <li>Flujo de estados controlado, notas internas e historial de auditoría.</li>
+          <li>Métricas: tickets vencidos y % resuelto dentro del SLA.</li>
+          <li>Contraseñas con scrypt y sesiones con vencimiento; 18 pruebas.</li>
+        </ul>
+        <div class="etiquetas"><span class="etiqueta">TypeScript</span><span class="etiqueta">Node.js</span><span class="etiqueta">Express</span><span class="etiqueta">SQLite</span><span class="etiqueta">HTML/CSS</span></div>
+        <div class="enlaces"><a href="https://github.com/chacolla2001-art/mesa-de-ayuda" target="_blank" rel="noopener">Código ↗</a></div>
+      </article>
+      <article class="proyecto">
+        <h3>📡 Monitor de red</h3>
+        <p>Herramienta de línea de comandos que vigila servicios HTTP, puertos TCP y DNS.</p>
+        <ul>
+          <li>Latencia, reintentos y estado arriba / lento / caído.</li>
+          <li>Disponibilidad (uptime) desde el historial y página HTML de estado.</li>
+          <li>Código de salida para alertas en cron o CI.</li>
+        </ul>
+        <div class="etiquetas"><span class="etiqueta">Redes</span><span class="etiqueta">TypeScript</span><span class="etiqueta">TCP/DNS</span><span class="etiqueta">GitHub Actions</span></div>
+        <div class="enlaces"><a href="https://github.com/chacolla2001-art/monitor-red" target="_blank" rel="noopener">Código ↗</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades técnicas</h2>
+    <div class="habilidades">
+      <div><h3>Backend y APIs</h3><p>Java (Spring Boot), Python (FastAPI), TypeScript (Node.js, Express), diseño de APIs REST, validación de datos</p></div>
+      <div><h3>Bases de datos</h3><p>SQL, PostgreSQL, SQLite, H2, JPA/Hibernate, SQLAlchemy, transacciones y bloqueos</p></div>
+      <div><h3>Calidad</h3><p>Pruebas unitarias y de integración (JUnit, pytest, node:test), integración continua con GitHub Actions</p></div>
+      <div><h3>Infraestructura y redes</h3><p>Fundamentos de redes (CCNA 1 y 2), TCP/IP, DNS, HTTP, Docker, Git, Linux básico</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Proyectos desarrollados con asistencia de herramientas de IA; el código, las pruebas y la documentación están publicados en GitHub.</p>
+    <p>© 2026 Pedro Abad Chacolla Espinoza · <a href="mailto:chacolla43@gmail.com">chacolla43@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
