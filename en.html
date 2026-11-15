@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pedro Chacolla · Software Developer</title>
+<meta name="description" content="Pedro Chacolla, software developer based in La Paz, Bolivia. APIs and backends with Java, Python and TypeScript, automation and IT support. English C1.">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div class="contenedor">
+  <nav class="idioma"><a href="index.html" lang="es">ES</a> · <b>EN</b></nav>
+
+  <header>
+    <p class="disponible">● Available for projects and hiring</p>
+    <h1>Pedro Chacolla</h1>
+    <p class="rol">Software Developer · APIs, backends and automation</p>
+    <p class="resumen">I build reliable, well-tested systems: APIs that handle money or inventory, internal tools for teams, and infrastructure monitoring. I work in English and Spanish from La Paz, Bolivia (UTC−4), with clients anywhere.</p>
+    <div class="botones">
+      <a class="boton principal" href="mailto:chacolla43@gmail.com?subject=Project">Get in touch</a>
+      <a class="boton" href="#projects">See projects</a>
+      <a class="boton" href="https://github.com/chacolla2001-art" target="_blank" rel="noopener">GitHub</a>
+      <a class="boton" href="https://linkedin.com/in/pedro-chacolla-b18918359" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>What I can do for you</h2>
+    <div class="servicios">
+      <div><h3>🔌 APIs and backends</h3><p>REST APIs with Java (Spring Boot), Python (FastAPI) or Node.js: authentication, validation, database, tests and documentation.</p></div>
+      <div><h3>🖥️ Internal tools</h3><p>Inventory, help desk, dashboards and record-keeping for teams still running on spreadsheets or chat.</p></div>
+      <div><h3>⚙️ Automation</h3><p>Scripts that save hours: automatic reports, system integrations, data extraction and clean-up.</p></div>
+      <div><h3>🛠️ Fixes and improvements</h3><p>Bug fixing, automated tests, documentation and delivery (Docker, deployment, continuous integration).</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="proyectos">
+      <article class="proyecto">
+        <h3>💳 Wallet API</h3>
+        <p>Digital wallet API with atomic transfers between accounts.</p>
+        <ul>
+          <li>Money stored as integer cents: zero rounding errors.</li>
+          <li>Idempotency keys: a retry never charges twice.</li>
+          <li>Ordered row locking to prevent deadlocks; daily limits.</li>
+        </ul>
+        <div class="etiquetas"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>pytest</span><span>Docker</span></div>
+        <a class="enlace" href="https://github.com/chacolla2001-art/billetera-api" target="_blank" rel="noopener">View code ↗</a>
+      </article>
+      <article class="proyecto">
+        <h3>📦 Inventory</h3>
+        <p>Inventory API for businesses: stock in, stock out, physical-count adjustments and a full ledger.</p>
+        <ul>
+          <li>Low-stock alerts and inventory valuation.</li>
+          <li>Optimistic locking for concurrent changes; RFC 9457 error responses.</li>
+          <li>Unit and integration tests.</li>
+        </ul>
+        <div class="etiquetas"><span>Java 21</span><span>Spring Boot</span><span>JPA</span><span>JUnit</span><span>Maven</span></div>
+        <a class="enlace" href="https://github.com/chacolla2001-art/inventario-spring" target="_blank" rel="noopener">View code ↗</a>
+      </article>
+      <article class="proyecto">
+        <h3>🛟 Help Desk</h3>
+        <p>Support ticketing system with SLA deadlines by priority, roles and metrics.</p>
+        <ul>
+          <li>Controlled status workflow, internal notes and audit history.</li>
+          <li>Metrics: overdue tickets and % resolved within SLA.</li>
+          <li>scrypt password hashing, expiring sessions and 18 tests.</li>
+        </ul>
+        <div class="etiquetas"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>SQLite</span></div>
+        <a class="enlace" href="https://github.com/chacolla2001-art/mesa-de-ayuda" target="_blank" rel="noopener">View code ↗</a>
+      </article>
+      <article class="proyecto">
+        <h3>📡 Network Monitor</h3>
+        <p>Command-line tool that watches web services, TCP ports and DNS.</p>
+        <ul>
+          <li>Latency, retries and up / slow / down status.</li>
+          <li>Uptime from history and an HTML status page.</li>
+          <li>Exit codes for cron or CI alerts.</li>
+        </ul>
+        <div class="etiquetas"><span>TypeScript</span><span>Networking</span><span>TCP/DNS</span><span>GitHub Actions</span></div>
+        <a class="enlace" href="https://github.com/chacolla2001-art/monitor-red" target="_blank" rel="noopener">View code ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tech stack</h2>
+    <div class="habilidades">
+      <div><h3>Backend</h3><p>Java · Spring Boot · Python · FastAPI · TypeScript · Node.js · Express</p></div>
+      <div><h3>Data</h3><p>SQL · PostgreSQL · SQLite · JPA/Hibernate · SQLAlchemy · transactions</p></div>
+      <div><h3>Quality</h3><p>JUnit · pytest · integration tests · GitHub Actions · Docker · Git</p></div>
+      <div><h3>Networking</h3><p>TCP/IP · DNS · HTTP · Cisco CCNA 1 &amp; 2</p></div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div>
+      <h2>About me</h2>
+      <p>I completed the Systems Engineering program at Universidad Privada del Valle (Univalle) in La Paz. I care about finished work: clear, tested, documented code and straightforward communication about scope and deadlines.</p>
+      <p>English C1: comfortable working with English-speaking teams and clients, in writing and on calls.</p>
+    </div>
+    <div class="datos">
+      <p>📍 La Paz, Bolivia (UTC−4)</p>
+      <p>🎓 Systems Engineering, Univalle</p>
+      <p>🗣️ Spanish (native) · English (C1)</p>
+      <p>✉️ <a href="mailto:chacolla43@gmail.com">chacolla43@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section class="cierre">
+    <h2>Have a project?</h2>
+    <p>Tell me what you need and I'll reply within 24 hours with a clear proposal: scope, timeline and price.</p>
+    <a class="boton principal" href="mailto:chacolla43@gmail.com?subject=Project">chacolla43@gmail.com</a>
+  </section>
+
+  <footer><p>© 2026 Pedro Abad Chacolla Espinoza</p></footer>
+</div>
+</body>
+</html>
