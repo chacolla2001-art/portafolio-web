@@ -2,7 +2,8 @@
 const raiz = document.documentElement
 const menosMovimiento = matchMedia('(prefers-reduced-motion: reduce)').matches
 // «#captura» deja la página quieta y completa, para sacar capturas de pantalla.
-const quieto = menosMovimiento || location.hash === '#captura'
+// También queda quieta si se abre en una pestaña en segundo plano, donde el navegador pausa las animaciones.
+const quieto = menosMovimiento || location.hash === '#captura' || document.hidden
 if (location.hash === '#captura') raiz.classList.add('quieto')
 
 // Aparición al entrar en pantalla
