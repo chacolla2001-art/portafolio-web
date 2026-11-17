@@ -30,15 +30,15 @@ const GITHUB = '<svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true">
 
 // Datos comunes de los proyectos (lo que no cambia con el idioma)
 const DEMOS = [
-  { id: 'caja-pos', icono: 'carrito', c1: '#22c55e', c2: '#14b8a6', demo: `${PAGINAS}/caja-pos/#demo`, alto: 800, etiquetas: ['JavaScript', 'HTML', 'CSS', 'node:test'] },
-  { id: 'reservas', icono: 'calendario', c1: '#a78bfa', c2: '#f472b6', demo: `${PAGINAS}/reservas/#demo`, alto: 800, etiquetas: ['JavaScript', 'HTML', 'CSS', 'node:test'] },
-  { id: 'tablero-ventas', icono: 'grafico', c1: '#38bdf8', c2: '#818cf8', demo: `${PAGINAS}/tablero-ventas/`, alto: 900, etiquetas: ['JavaScript', 'SVG', 'CSV', 'node:test'] },
+  { id: 'caja-pos', icono: 'carrito', c1: '#15803d', c2: '#14b8a6', demo: `${PAGINAS}/caja-pos/#demo`, alto: 800, etiquetas: ['JavaScript', 'HTML', 'CSS', 'node:test'] },
+  { id: 'reservas', icono: 'calendario', c1: '#4f46e5', c2: '#f472b6', demo: `${PAGINAS}/reservas/#demo`, alto: 800, etiquetas: ['JavaScript', 'HTML', 'CSS', 'node:test'] },
+  { id: 'tablero-ventas', icono: 'grafico', c1: '#2563eb', c2: '#818cf8', demo: `${PAGINAS}/tablero-ventas/`, alto: 900, etiquetas: ['JavaScript', 'SVG', 'CSV', 'node:test'] },
 ]
 const BACKENDS = [
-  { id: 'billetera-api', icono: 'billetera', c1: '#fbbf24', c2: '#f97316', ancho: 1280, alto: 900, etiquetas: ['Python', 'FastAPI', 'SQLAlchemy', 'pytest', 'Docker'] },
-  { id: 'inventario-spring', icono: 'caja', c1: '#fb923c', c2: '#f43f5e', ancho: 1280, alto: 860, etiquetas: ['Java 21', 'Spring Boot', 'JPA', 'JUnit', 'Maven'] },
-  { id: 'mesa-de-ayuda', icono: 'ayuda', c1: '#22d3ee', c2: '#3b82f6', ancho: 1280, alto: 1000, etiquetas: ['TypeScript', 'Node.js', 'Express', 'SQLite'] },
-  { id: 'monitor-red', icono: 'pulso', c1: '#a3e635', c2: '#22c55e', ancho: 1100, alto: 560, etiquetas: ['TypeScript', 'Node.js', 'CLI'] },
+  { id: 'billetera-api', icono: 'billetera', c1: '#b45309', c2: '#f97316', ancho: 1280, alto: 900, etiquetas: ['Python', 'FastAPI', 'SQLAlchemy', 'pytest', 'Docker'] },
+  { id: 'inventario-spring', icono: 'caja', c1: '#c2410c', c2: '#f43f5e', ancho: 1280, alto: 860, etiquetas: ['Java 21', 'Spring Boot', 'JPA', 'JUnit', 'Maven'] },
+  { id: 'mesa-de-ayuda', icono: 'ayuda', c1: '#0e7490', c2: '#3b82f6', ancho: 1280, alto: 1000, etiquetas: ['TypeScript', 'Node.js', 'Express', 'SQLite'] },
+  { id: 'monitor-red', icono: 'pulso', c1: '#4d7c0f', c2: '#22c55e', ancho: 1100, alto: 560, etiquetas: ['TypeScript', 'Node.js', 'CLI'] },
 ]
 const TECNOLOGIAS = ['JavaScript', 'TypeScript', 'Node.js', 'Python', 'FastAPI', 'Java', 'Spring Boot', 'SQL', 'SQLite', 'HTML', 'CSS', 'SVG', 'Git', 'Docker', 'pytest', 'JUnit']
 
@@ -51,8 +51,7 @@ const TEXTOS = {
     menu: [['#demos', 'Demos'], ['#backends', 'Backends'], ['#servicios', 'Servicios'], ['#contacto', 'Contacto']],
     estado: 'Disponible para proyectos y contratación',
     nombre: 'Pedro Chacolla · Desarrollador de software',
-    titular: 'Construyo software para',
-    frases: ['cobrar sin errores', 'agendar sin choques', 'entender tus ventas', 'automatizar tareas'],
+    titular: 'Software claro y bien probado para tu negocio',
     resumen: 'Sistemas para negocios y APIs con pruebas automatizadas. Puedes abrir las demos y usarlas ahora mismo, sin instalar nada. Trabajo desde La Paz, Bolivia, en español e inglés.',
     verDemos: 'Ver demos en vivo',
     escribeme: 'Escríbeme',
@@ -105,8 +104,7 @@ const TEXTOS = {
     menu: [['#demos', 'Demos'], ['#backends', 'Backends'], ['#servicios', 'Services'], ['#contacto', 'Contact']],
     estado: 'Available for projects and hiring',
     nombre: 'Pedro Chacolla · Software Developer',
-    titular: 'I build software to',
-    frases: ['sell without errors', 'book without clashes', 'understand your sales', 'automate busywork'],
+    titular: 'Clear, well-tested software for your business',
     resumen: 'Business apps and APIs with automated tests. You can open the demos and use them right now, nothing to install. I work from La Paz, Bolivia, in English and Spanish.',
     verDemos: 'See live demos',
     escribeme: 'Email me',
@@ -177,7 +175,7 @@ function pagina(lang) {
           ${lista(x.puntos)}
           ${etiquetas(p.etiquetas)}
           <div class="acciones">
-            <a class="boton color" href="${p.demo}" target="_blank" rel="noopener">${t.abrirDemo} ${icono('externo')}</a>
+            <a class="boton principal" href="${p.demo}" target="_blank" rel="noopener">${t.abrirDemo} ${icono('externo')}</a>
             <a class="boton" href="${GH}/${p.id}" target="_blank" rel="noopener">${GITHUB} ${t.codigo}</a>
           </div>
         </div>
@@ -209,10 +207,9 @@ function pagina(lang) {
   const pasos = t.pasos.map(([nombre, texto], i) => `
         <div class="paso ver" style="--i:${i}"><h3>${nombre}</h3><p>${texto}</p></div>`).join('')
 
-  const cinta = [...TECNOLOGIAS, ...TECNOLOGIAS].map((x) => `<span>${x}</span>`).join('')
-  const vitrina = DEMOS.map((p) => `
-        <a class="marco" href="${p.demo}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-          <div class="barra"><i></i><i></i><i></i><span>${t.proyectos[p.id].nombre}</span></div>
+  const vitrina = DEMOS.slice(2).map((p) => `
+        <a class="marco" href="${p.demo}" target="_blank" rel="noopener" aria-label="${t.abrirDemo}: ${t.proyectos[p.id].nombre}">
+          <div class="barra"><i></i><i></i><i></i><span>${p.demo.replace('https://', '')}</span></div>
           <img src="img/${p.id}.png" alt="" width="1280" height="${p.alto}">
         </a>`).join('')
 
@@ -223,20 +220,17 @@ function pagina(lang) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${t.titulo}</title>
 <meta name="description" content="${t.descripcion}">
-<meta name="theme-color" content="#070b16">
+<meta name="theme-color" content="#f7f8fb">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${t.titulo}">
 <meta property="og:description" content="${t.descripcion}">
 <meta property="og:image" content="${PAGINAS}/portafolio-web/img/tablero-ventas.png">
 <link rel="alternate" hreflang="${t.otro.lang}" href="${t.otro.archivo}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='white'%3EPC%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232f55d4'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='white'%3EPC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="estilos.css">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="fondo" aria-hidden="true"><i></i><i></i><i></i></div>
-<div class="progreso" aria-hidden="true"></div>
-
 <header class="nav">
   <div class="contenedor">
     <a class="marca" href="#"><b>PC</b>Pedro Chacolla</a>
@@ -251,10 +245,10 @@ function pagina(lang) {
       <div>
         <span class="estado ver"><i></i>${t.estado}</span>
         <p class="nombre ver" style="--i:1">${t.nombre}</p>
-        <h1 class="ver" style="--i:2">${t.titular} <span class="rota" data-frases='${JSON.stringify(t.frases)}'><span>${t.frases[0]}</span></span></h1>
+        <h1 class="ver" style="--i:2">${t.titular}</h1>
         <p class="resumen ver" style="--i:3">${t.resumen}</p>
         <div class="botones ver" style="--i:4">
-          <a class="boton principal" href="#demos">${t.verDemos} ${icono('flecha', 'mueve')}</a>
+          <a class="boton principal" href="#demos">${t.verDemos} ${icono('flecha')}</a>
           <a class="boton" href="${correo}">${icono('correo')} ${t.escribeme}</a>
         </div>
         <div class="redes ver" style="--i:5">
@@ -263,15 +257,14 @@ function pagina(lang) {
           <a href="${correo}" aria-label="${t.escribeme}">${icono('correo')}</a>
         </div>
       </div>
-      <div class="vitrina ver" style="--i:3">${vitrina}
+      <div class="ver" style="--i:2">${vitrina}
       </div>
     </div>
     <div class="contenedor">
-      <div class="cifras">${t.cifras.map(([n, x], i) => `
-        <div class="cifra ver" style="--i:${i}"><b data-contar="${n}">${n}</b><span>${x}</span></div>`).join('')}
+      <div class="cifras ver">${t.cifras.map(([n, x], i) => `
+        <div class="cifra"><b>${n}</b><span>${x}</span></div>`).join('')}
       </div>
     </div>
-    <div class="cinta" aria-hidden="true"><div>${cinta}</div></div>
   </section>
 
   <section id="demos">
@@ -308,7 +301,7 @@ function pagina(lang) {
     <div class="contenedor">
       ${titulo(t.sobreTitulo)}
       <div class="sobre">
-        <div class="texto ver">${t.sobre.map((p) => `<p>${p}</p>`).join('')}</div>
+        <div class="texto ver">${t.sobre.map((p) => `<p>${p}</p>`).join('')}${etiquetas(TECNOLOGIAS)}</div>
         <div class="tarjeta datos ver" style="--i:1">${t.datos.map(([ic, x]) => `
           <p>${icono(ic)} ${x}</p>`).join('')}
           <p>${icono('correo')} <a href="${correo}">${CORREO}</a></p>
