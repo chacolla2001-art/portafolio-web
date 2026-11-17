@@ -4,121 +4,251 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pedro Chacolla · Desarrollador de software</title>
-<meta name="description" content="Pedro Chacolla, desarrollador de software en La Paz, Bolivia. APIs y backends con Java, Python y TypeScript, sitios web, automatización y soporte de TI.">
+<meta name="description" content="Pedro Chacolla, desarrollador de software en La Paz, Bolivia. Sistemas para negocios (punto de venta, agenda de citas, tableros de ventas) y APIs con Python, Java y TypeScript. Demos en vivo.">
+<meta name="theme-color" content="#070b16">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pedro Chacolla · Desarrollador de software">
+<meta property="og:description" content="Pedro Chacolla, desarrollador de software en La Paz, Bolivia. Sistemas para negocios (punto de venta, agenda de citas, tableros de ventas) y APIs con Python, Java y TypeScript. Demos en vivo.">
+<meta property="og:image" content="https://chacolla2001-art.github.io/portafolio-web/img/tablero-ventas.png">
+<link rel="alternate" hreflang="en" href="en.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%237c5cff'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='21.5' text-anchor='middle' font-family='Arial' font-weight='700' font-size='14' fill='white'%3EPC%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="estilos.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="contenedor">
-  <nav class="idioma"><b>ES</b> · <a href="en.html" lang="en">EN</a></nav>
+<div class="fondo" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="progreso" aria-hidden="true"></div>
 
-  <header>
-    <p class="disponible">● Disponible para proyectos y contratación</p>
-    <h1>Pedro Chacolla</h1>
-    <p class="rol">Desarrollador de software · APIs, backends y automatización</p>
-    <p class="resumen">Construyo sistemas confiables y bien probados: APIs que manejan dinero o inventario, herramientas internas para equipos y monitoreo de infraestructura. Trabajo en español e inglés, desde La Paz, Bolivia, para clientes de cualquier país.</p>
-    <div class="botones">
-      <a class="boton principal" href="mailto:chacolla43@gmail.com?subject=Proyecto">Escríbeme</a>
-      <a class="boton" href="#proyectos">Ver proyectos</a>
-      <a class="boton" href="https://github.com/chacolla2001-art" target="_blank" rel="noopener">GitHub</a>
-      <a class="boton" href="https://linkedin.com/in/pedro-chacolla-b18918359" target="_blank" rel="noopener">LinkedIn</a>
+<header class="nav">
+  <div class="contenedor">
+    <a class="marca" href="#"><b>PC</b>Pedro Chacolla</a>
+    <nav><a href="#demos">Demos</a><a href="#backends">Backends</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a></nav>
+    <div class="idioma"><b>ES</b><a href="en.html" lang="en">EN</a></div>
+  </div>
+</header>
+
+<main>
+  <section class="portada">
+    <div class="contenedor dupla">
+      <div>
+        <span class="estado ver"><i></i>Disponible para proyectos y contratación</span>
+        <p class="nombre ver" style="--i:1">Pedro Chacolla · Desarrollador de software</p>
+        <h1 class="ver" style="--i:2">Construyo software para <span class="rota" data-frases='["cobrar sin errores","agendar sin choques","entender tus ventas","automatizar tareas"]'><span>cobrar sin errores</span></span></h1>
+        <p class="resumen ver" style="--i:3">Sistemas para negocios y APIs con pruebas automatizadas. Puedes abrir las demos y usarlas ahora mismo, sin instalar nada. Trabajo desde La Paz, Bolivia, en español e inglés.</p>
+        <div class="botones ver" style="--i:4">
+          <a class="boton principal" href="#demos">Ver demos en vivo <svg class="icono mueve" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="boton" href="mailto:chacolla43@gmail.com?subject=Proyecto"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg> Escríbeme</a>
+        </div>
+        <div class="redes ver" style="--i:5">
+          <a href="https://github.com/chacolla2001-art" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+          <a href="https://linkedin.com/in/pedro-chacolla-b18918359" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></a>
+          <a href="mailto:chacolla43@gmail.com?subject=Proyecto" aria-label="Escríbeme"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg></a>
+        </div>
+      </div>
+      <div class="vitrina ver" style="--i:3">
+        <a class="marco" href="https://chacolla2001-art.github.io/caja-pos/#demo" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <div class="barra"><i></i><i></i><i></i><span>Caja — punto de venta</span></div>
+          <img src="img/caja-pos.png" alt="" width="1280" height="800">
+        </a>
+        <a class="marco" href="https://chacolla2001-art.github.io/reservas/#demo" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <div class="barra"><i></i><i></i><i></i><span>Reservas — agenda de citas</span></div>
+          <img src="img/reservas.png" alt="" width="1280" height="800">
+        </a>
+        <a class="marco" href="https://chacolla2001-art.github.io/tablero-ventas/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+          <div class="barra"><i></i><i></i><i></i><span>Tablero de ventas</span></div>
+          <img src="img/tablero-ventas.png" alt="" width="1280" height="900">
+        </a>
+      </div>
     </div>
-  </header>
+    <div class="contenedor">
+      <div class="cifras">
+        <div class="cifra ver" style="--i:0"><b data-contar="7">7</b><span>proyectos publicados</span></div>
+        <div class="cifra ver" style="--i:1"><b data-contar="87">87</b><span>pruebas automatizadas</span></div>
+        <div class="cifra ver" style="--i:2"><b data-contar="3">3</b><span>demos en vivo</span></div>
+        <div class="cifra ver" style="--i:3"><b data-contar="2">2</b><span>idiomas de trabajo</span></div>
+      </div>
+    </div>
+    <div class="cinta" aria-hidden="true"><div><span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Python</span><span>FastAPI</span><span>Java</span><span>Spring Boot</span><span>SQL</span><span>SQLite</span><span>HTML</span><span>CSS</span><span>SVG</span><span>Git</span><span>Docker</span><span>pytest</span><span>JUnit</span><span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Python</span><span>FastAPI</span><span>Java</span><span>Spring Boot</span><span>SQL</span><span>SQLite</span><span>HTML</span><span>CSS</span><span>SVG</span><span>Git</span><span>Docker</span><span>pytest</span><span>JUnit</span></div></div>
+  </section>
+
+  <section id="demos">
+    <div class="contenedor">
+      <div class="titulo ver"><small>Demos en vivo</small><h2>Pruébalos antes de escribirme</h2><p>Tres aplicaciones que funcionan en el navegador con datos de ejemplo. Ábrelas, vende, agenda una cita o carga tu propio archivo de ventas.</p></div>
+      <article class="tarjeta proyecto demo ver" style="--c1:#22c55e;--c2:#14b8a6">
+        <a class="marco" href="https://chacolla2001-art.github.io/caja-pos/#demo" target="_blank" rel="noopener" aria-label="Abrir la demo: Caja — punto de venta">
+          <div class="barra"><i></i><i></i><i></i><span>chacolla2001-art.github.io/caja-pos/</span></div>
+          <img src="img/caja-pos.png" alt="Pantalla de venta con catálogo, carrito y cobro" width="1280" height="800">
+        </a>
+        <div>
+          <span class="sello"><i></i>Demo en vivo</span>
+          <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></span>Caja — punto de venta</h3>
+          <p class="que">Para tiendas pequeñas: cobra, descuenta el stock, imprime el ticket y cierra el día.</p>
+          <ul><li>Carrito con descuento y pago en efectivo, QR o tarjeta, con cálculo del cambio.</li><li>Nunca vende más de lo que hay y avisa qué productos reponer.</li><li>Reporte del día y exportación de ventas a Excel (CSV).</li></ul>
+          <div class="etiquetas"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>node:test</span></div>
+          <div class="acciones">
+            <a class="boton color" href="https://chacolla2001-art.github.io/caja-pos/#demo" target="_blank" rel="noopener">Abrir la demo <svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="boton" href="https://github.com/chacolla2001-art/caja-pos" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Código</a>
+          </div>
+        </div>
+      </article>
+      <article class="tarjeta proyecto demo ver" style="--c1:#a78bfa;--c2:#f472b6">
+        <a class="marco" href="https://chacolla2001-art.github.io/reservas/#demo" target="_blank" rel="noopener" aria-label="Abrir la demo: Reservas — agenda de citas">
+          <div class="barra"><i></i><i></i><i></i><span>chacolla2001-art.github.io/reservas/</span></div>
+          <img src="img/reservas.png" alt="Agenda semanal con el formulario de nueva cita" width="1280" height="800" loading="lazy">
+        </a>
+        <div>
+          <span class="sello"><i></i>Demo en vivo</span>
+          <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>Reservas — agenda de citas</h3>
+          <p class="que">Para peluquerías, consultorios y talleres: muestra solo los horarios realmente libres.</p>
+          <ul><li>Dos citas no pueden superponerse; una cancelada libera su espacio.</li><li>Recordatorio por WhatsApp con el mensaje ya redactado.</li><li>Resumen del día: citas, ingreso esperado y ocupación.</li></ul>
+          <div class="etiquetas"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>node:test</span></div>
+          <div class="acciones">
+            <a class="boton color" href="https://chacolla2001-art.github.io/reservas/#demo" target="_blank" rel="noopener">Abrir la demo <svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="boton" href="https://github.com/chacolla2001-art/reservas" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Código</a>
+          </div>
+        </div>
+      </article>
+      <article class="tarjeta proyecto demo ver" style="--c1:#38bdf8;--c2:#818cf8">
+        <a class="marco" href="https://chacolla2001-art.github.io/tablero-ventas/" target="_blank" rel="noopener" aria-label="Abrir la demo: Tablero de ventas">
+          <div class="barra"><i></i><i></i><i></i><span>chacolla2001-art.github.io/tablero-ventas/</span></div>
+          <img src="img/tablero-ventas.png" alt="Tablero con indicadores, línea de ingresos y gráficos" width="1280" height="900" loading="lazy">
+        </a>
+        <div>
+          <span class="sello"><i></i>Demo en vivo</span>
+          <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>Tablero de ventas</h3>
+          <p class="que">Convierte un archivo de ventas en indicadores y gráficos que se entienden de un vistazo.</p>
+          <ul><li>Ingresos, ventas y promedio frente al periodo anterior.</li><li>Gráficos SVG hechos a mano, sin librerías.</li><li>Carga tu propio CSV: se lee en tu navegador y no se envía a ningún lado.</li></ul>
+          <div class="etiquetas"><span>JavaScript</span><span>SVG</span><span>CSV</span><span>node:test</span></div>
+          <div class="acciones">
+            <a class="boton color" href="https://chacolla2001-art.github.io/tablero-ventas/" target="_blank" rel="noopener">Abrir la demo <svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="boton" href="https://github.com/chacolla2001-art/tablero-ventas" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Código</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="backends">
+    <div class="contenedor">
+      <div class="titulo ver"><small>Backends y herramientas</small><h2>Lo que no se ve, bien hecho</h2><p>APIs y herramientas con reglas de negocio claras, pruebas y documentación para ponerlas en marcha.</p></div>
+      <div class="rejilla">
+        <article class="tarjeta proyecto ver" style="--c1:#fbbf24;--c2:#f97316;--i:0">
+          <div class="imagen"><img src="img/billetera-api.png" alt="Documentación interactiva de la Billetera API" width="1280" height="900" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M16 15h2"/></svg></span>Billetera API</h3>
+            <p class="que">API de una billetera digital con transferencias entre cuentas.</p>
+            <ul><li>Dinero en centavos enteros: sin errores de redondeo.</li><li>Idempotencia: un reintento nunca cobra dos veces.</li><li>Límite diario y bloqueo de filas en orden fijo.</li></ul>
+            <div class="etiquetas"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>pytest</span><span>Docker</span></div>
+            <div class="acciones"><a class="boton chico" href="https://github.com/chacolla2001-art/billetera-api" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Ver código</a></div>
+          </div>
+        </article>
+        <article class="tarjeta proyecto ver" style="--c1:#fb923c;--c2:#f43f5e;--i:1">
+          <div class="imagen"><img src="img/inventario-spring.png" alt="Panel web del inventario" width="1280" height="860" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span>Inventario</h3>
+            <p class="que">API y panel web de inventario: entradas, salidas, ajustes por conteo y kardex.</p>
+            <ul><li>Alertas de stock mínimo y valorización.</li><li>Bloqueo optimista para cambios simultáneos.</li><li>Pruebas unitarias y de integración.</li></ul>
+            <div class="etiquetas"><span>Java 21</span><span>Spring Boot</span><span>JPA</span><span>JUnit</span><span>Maven</span></div>
+            <div class="acciones"><a class="boton chico" href="https://github.com/chacolla2001-art/inventario-spring" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Ver código</a></div>
+          </div>
+        </article>
+        <article class="tarjeta proyecto ver" style="--c1:#22d3ee;--c2:#3b82f6;--i:0">
+          <div class="imagen"><img src="img/mesa-de-ayuda.png" alt="Panel de la mesa de ayuda" width="1280" height="1000" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M5.6 5.6l3.9 3.9M14.5 14.5l3.9 3.9M18.4 5.6l-3.9 3.9M9.5 14.5l-3.9 3.9"/></svg></span>Mesa de ayuda</h3>
+            <p class="que">Sistema de tickets de soporte con plazos por prioridad, roles y métricas.</p>
+            <ul><li>Flujo de estados controlado e historial de cambios.</li><li>Tickets vencidos y porcentaje resuelto a tiempo.</li><li>Contraseñas con scrypt y sesiones con vencimiento.</li></ul>
+            <div class="etiquetas"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>SQLite</span></div>
+            <div class="acciones"><a class="boton chico" href="https://github.com/chacolla2001-art/mesa-de-ayuda" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Ver código</a></div>
+          </div>
+        </article>
+        <article class="tarjeta proyecto ver" style="--c1:#a3e635;--c2:#22c55e;--i:1">
+          <div class="imagen"><img src="img/monitor-red.png" alt="Página de estado del monitor" width="1100" height="560" loading="lazy"></div>
+          <div class="cuerpo">
+            <h3><span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12h4l3-8 4 16 3-8h6"/></svg></span>Monitor de servicios</h3>
+            <p class="que">Herramienta de línea de comandos que avisa cuando un sitio o servicio deja de responder.</p>
+            <ul><li>Estado arriba, lento o caído, con reintentos.</li><li>Disponibilidad calculada desde el historial.</li><li>Página HTML de estado lista para compartir.</li></ul>
+            <div class="etiquetas"><span>TypeScript</span><span>Node.js</span><span>CLI</span></div>
+            <div class="acciones"><a class="boton chico" href="https://github.com/chacolla2001-art/monitor-red" target="_blank" rel="noopener"><svg class="icono lleno" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> Ver código</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="contenedor">
+      <div class="titulo ver"><small>Servicios</small><h2>Qué puedo hacer por ti</h2><p>Trabajos pequeños y concretos, con precio cerrado y fecha de entrega.</p></div>
+      <div class="servicios">
+        <div class="tarjeta servicio ver" style="--c1:#22c55e;--c2:#14b8a6;--i:0">
+          <span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.4 11h10.2L20 7H6.2"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></span>
+          <h3>Sistemas para tu negocio</h3>
+          <p>Caja, inventario, agenda de citas o registro de clientes, adaptados a cómo trabajas hoy con planillas o WhatsApp.</p>
+        </div>
+        <div class="tarjeta servicio ver" style="--c1:#38bdf8;--c2:#818cf8;--i:1">
+          <span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+          <h3>Tableros y reportes</h3>
+          <p>Tus planillas de Excel convertidas en indicadores y gráficos claros para decidir más rápido.</p>
+        </div>
+        <div class="tarjeta servicio ver" style="--c1:#fbbf24;--c2:#f97316;--i:2">
+          <span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.5 5l-3 14"/></svg></span>
+          <h3>APIs y backends</h3>
+          <p>APIs REST con Python (FastAPI), Java (Spring Boot) o Node.js: validación, base de datos, pruebas y documentación.</p>
+        </div>
+        <div class="tarjeta servicio ver" style="--c1:#a78bfa;--c2:#f472b6;--i:3">
+          <span class="insignia"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+          <h3>Automatización y mejoras</h3>
+          <p>Scripts que ahorran horas, corrección de errores y pruebas automatizadas para código que ya existe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section>
-    <h2>Qué puedo hacer por ti</h2>
-    <div class="servicios">
-      <div><h3>🔌 APIs y backends</h3><p>APIs REST con Java (Spring Boot), Python (FastAPI) o Node.js: autenticación, validación, base de datos, pruebas y documentación.</p></div>
-      <div><h3>🖥️ Sistemas internos</h3><p>Inventarios, mesas de ayuda, paneles de control y registros para negocios que hoy trabajan con planillas o WhatsApp.</p></div>
-      <div><h3>⚙️ Automatización</h3><p>Scripts que ahorran horas: reportes automáticos, integración entre sistemas, extracción y limpieza de datos.</p></div>
-      <div><h3>🛠️ Corrección y mejoras</h3><p>Arreglo de errores, pruebas automatizadas, documentación y puesta en marcha (Docker, despliegue, integración continua).</p></div>
-    </div>
-  </section>
-
-  <section id="proyectos">
-    <h2>Proyectos</h2>
-    <div class="proyectos">
-      <article class="proyecto">
-        <img src="img/billetera-api.png" alt="Documentación interactiva de la Billetera API" loading="lazy" width="1280" height="860">
-        <h3>💳 Billetera API</h3>
-        <p>API de una billetera digital con transferencias atómicas entre cuentas.</p>
-        <ul>
-          <li>Dinero en centavos enteros: cero errores de redondeo.</li>
-          <li>Idempotencia: un reintento nunca cobra dos veces.</li>
-          <li>Bloqueo de filas en orden fijo para evitar interbloqueos; límite diario.</li>
-        </ul>
-        <div class="etiquetas"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>pytest</span><span>Docker</span></div>
-        <a class="enlace" href="https://github.com/chacolla2001-art/billetera-api" target="_blank" rel="noopener">Ver código ↗</a>
-      </article>
-      <article class="proyecto">
-        <img src="img/inventario-spring.png" alt="Panel web del inventario" loading="lazy" width="1280" height="860">
-        <h3>📦 Inventario</h3>
-        <p>API y panel web de inventario para empresas: entradas, salidas, ajustes por conteo físico y kardex.</p>
-        <ul>
-          <li>Alertas de stock mínimo y valorización del inventario.</li>
-          <li>Bloqueo optimista para cambios simultáneos; errores estándar RFC 9457.</li>
-          <li>Pruebas unitarias y de integración.</li>
-        </ul>
-        <div class="etiquetas"><span>Java 21</span><span>Spring Boot</span><span>JPA</span><span>JUnit</span><span>Maven</span></div>
-        <a class="enlace" href="https://github.com/chacolla2001-art/inventario-spring" target="_blank" rel="noopener">Ver código ↗</a>
-      </article>
-      <article class="proyecto">
-        <img src="img/mesa-de-ayuda.png" alt="Panel de la mesa de ayuda" loading="lazy" width="1280" height="860">
-        <h3>🛟 Mesa de ayuda</h3>
-        <p>Sistema de tickets de soporte con plazos por prioridad (SLA), roles y métricas.</p>
-        <ul>
-          <li>Flujo de estados controlado, notas internas e historial de auditoría.</li>
-          <li>Métricas: tickets vencidos y % resuelto dentro del plazo.</li>
-          <li>Contraseñas con scrypt, sesiones con vencimiento y 18 pruebas.</li>
-        </ul>
-        <div class="etiquetas"><span>TypeScript</span><span>Node.js</span><span>Express</span><span>SQLite</span></div>
-        <a class="enlace" href="https://github.com/chacolla2001-art/mesa-de-ayuda" target="_blank" rel="noopener">Ver código ↗</a>
-      </article>
-      <article class="proyecto">
-        <img src="img/monitor-red.png" alt="Página de estado del monitor de red" loading="lazy" width="1280" height="860">
-        <h3>📡 Monitor de red</h3>
-        <p>Herramienta de línea de comandos que vigila servicios web, puertos TCP y DNS.</p>
-        <ul>
-          <li>Latencia, reintentos y estado arriba / lento / caído.</li>
-          <li>Disponibilidad (uptime) desde el historial y página HTML de estado.</li>
-          <li>Código de salida para alertas con cron o el Programador de tareas.</li>
-        </ul>
-        <div class="etiquetas"><span>TypeScript</span><span>Redes</span><span>TCP/DNS</span><span>CLI</span></div>
-        <a class="enlace" href="https://github.com/chacolla2001-art/monitor-red" target="_blank" rel="noopener">Ver código ↗</a>
-      </article>
+    <div class="contenedor">
+      <div class="titulo ver"><small>Cómo trabajo</small><h2>Claro desde el primer mensaje</h2></div>
+      <div class="pasos">
+        <div class="paso ver" style="--i:0"><h3>Me cuentas qué necesitas</h3><p>Un mensaje con el problema basta. Pregunto lo necesario para entenderlo.</p></div>
+        <div class="paso ver" style="--i:1"><h3>Propuesta clara</h3><p>Alcance, plazo y precio por escrito, antes de empezar.</p></div>
+        <div class="paso ver" style="--i:2"><h3>Avances que puedes ver</h3><p>Te comparto una demo que puedes abrir y probar mientras avanzo.</p></div>
+        <div class="paso ver" style="--i:3"><h3>Entrega completa</h3><p>Código con pruebas, instrucciones de uso y ajustes finales.</p></div>
+      </div>
     </div>
   </section>
 
   <section>
-    <h2>Tecnologías</h2>
-    <div class="habilidades">
-      <div><h3>Backend</h3><p>Java · Spring Boot · Python · FastAPI · TypeScript · Node.js · Express</p></div>
-      <div><h3>Datos</h3><p>SQL · PostgreSQL · SQLite · JPA/Hibernate · SQLAlchemy · transacciones</p></div>
-      <div><h3>Calidad</h3><p>JUnit · pytest · pruebas de integración · Docker · Git · Maven</p></div>
-      <div><h3>Redes</h3><p>TCP/IP · DNS · HTTP · Cisco CCNA 1 y 2</p></div>
+    <div class="contenedor">
+      <div class="titulo ver"><small>Sobre mí</small><h2>Trabajo bien terminado</h2></div>
+      <div class="sobre">
+        <div class="texto ver"><p>Soy egresado de Ingeniería de Sistemas de la Universidad Privada del Valle (Univalle), en La Paz. Me gusta el software que se entiende, probado y documentado, y la comunicación directa sobre plazos y avances.</p><p>Trabajo con asistentes de inteligencia artificial para avanzar más rápido, y reviso y pruebo cada entrega antes de enviarla.</p></div>
+        <div class="tarjeta datos ver" style="--i:1">
+          <p><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> La Paz, Bolivia (UTC−4)</p>
+          <p><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c2 2 10 2 12 0v-4.5"/></svg> Ingeniería de Sistemas, Univalle</p>
+          <p><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></svg> Español nativo · Inglés C1</p>
+          <p><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg> <a href="mailto:chacolla43@gmail.com?subject=Proyecto">chacolla43@gmail.com</a></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="sobre">
-    <div>
-      <h2>Sobre mí</h2>
-      <p>Soy egresado de Ingeniería de Sistemas de la Universidad Privada del Valle (Univalle), en La Paz. Me gusta el trabajo bien terminado: código claro, probado y documentado, y comunicación directa sobre plazos y avances.</p>
-      <p>Inglés nivel C1: puedo trabajar con equipos y clientes en inglés, por escrito y en llamadas.</p>
+  <div class="contenedor" id="contacto">
+    <div class="cierre ver">
+      <h2>¿Tienes un proyecto?</h2>
+      <p>Cuéntame qué necesitas y te respondo en menos de 24 horas con una propuesta clara: alcance, plazo y precio.</p>
+      <div class="botones">
+        <a class="boton principal" href="mailto:chacolla43@gmail.com?subject=Proyecto"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 7l8 6 8-6"/></svg> chacolla43@gmail.com</a>
+        <a class="boton" href="https://linkedin.com/in/pedro-chacolla-b18918359" target="_blank" rel="noopener"><svg class="icono " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg> LinkedIn</a>
+      </div>
     </div>
-    <div class="datos">
-      <p>📍 La Paz, Bolivia (UTC−4)</p>
-      <p>🎓 Ingeniería de Sistemas, Univalle</p>
-      <p>🗣️ Español nativo · Inglés C1</p>
-      <p>✉️ <a href="mailto:chacolla43@gmail.com">chacolla43@gmail.com</a></p>
-    </div>
-  </section>
+  </div>
+</main>
 
-  <section class="cierre">
-    <h2>¿Tienes un proyecto?</h2>
-    <p>Cuéntame qué necesitas y te respondo en menos de 24 horas con una propuesta clara: alcance, plazo y precio.</p>
-    <a class="boton principal" href="mailto:chacolla43@gmail.com?subject=Proyecto">chacolla43@gmail.com</a>
-  </section>
-
-  <footer><p>© 2026 Pedro Abad Chacolla Espinoza</p></footer>
-</div>
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Pedro Abad Chacolla Espinoza · Hecho a mano con HTML, CSS y JavaScript.</span>
+    <a href="https://github.com/chacolla2001-art/portafolio-web" target="_blank" rel="noopener">Código de este sitio</a>
+  </div>
+</footer>
+<script type="module" src="app.js"></script>
 </body>
 </html>
